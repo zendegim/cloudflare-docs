@@ -16,7 +16,7 @@ This tutorial will briefly touch upon the basics of HTML forms. For a more in-de
 
 {{</Aside>}}
 
-{{<tabs labels="js/sw | js/esm | ts/esm | ts/sw">}}
+{{<tabs labels="js/sw | js/esm | ts/esm | ts/sw | No code">}}
 {{<tab label="js/sw">}}
 
 ```js
@@ -83,6 +83,13 @@ addEventListener("fetch", (event) => {
 });
 ```
 
+{{</tab>}}
+{{<tab label="No code">}}
+Test test test.
+
+1. Test.
+2. Test.
+3. Test.
 {{</tab>}}
 {{</tabs>}}
 
