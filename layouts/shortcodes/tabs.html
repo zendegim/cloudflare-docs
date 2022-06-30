@@ -25,7 +25,13 @@
           TypeScript ESM</a
         >
 
+        {{ else}}
+        <a class="tab-label" href="#" data-link="tab-{{$link}}">
+          {{$link}}</a
+        >
+
         {{ end }}
+        
       </li>
       {{ end }}
     </ul>

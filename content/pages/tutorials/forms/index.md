@@ -16,7 +16,7 @@ This tutorial will briefly touch upon the basics of HTML forms. For a more in-de
 
 {{</Aside>}}
 
-{{<tabs labels="js/sw | js/esm | ts/esm | dashboard/test">}}
+{{<tabs labels="js/sw | js/esm | ts/esm | dashboard">}}
 {{<tab label="js/sw">}}
 
 ```js
@@ -66,7 +66,7 @@ export default {
 ```
 
 {{</tab>}}
-{{<tab label="dashboard/test">}}
+{{<tab label="dashboard">}}
 Test test test.
 
 1. Test.
