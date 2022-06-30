@@ -16,7 +16,7 @@ This tutorial will briefly touch upon the basics of HTML forms. For a more in-de
 
 {{</Aside>}}
 
-{{<tabs labels="js/sw | js/esm | ts/esm | ts/sw | No code">}}
+{{<tabs labels="js/sw | js/esm | ts/esm | dashboard/test">}}
 {{<tab label="js/sw">}}
 
 ```js
@@ -66,25 +66,7 @@ export default {
 ```
 
 {{</tab>}}
-{{<tab label="ts/sw">}}
-
-```js
-async function handler(request) {
-  const base = "https://obinnas.com";
-  const statusCode = 301;
-
-  const destination = new URL(request.url, base);
-  return Response.redirect(destination.toString(), statusCode);
-}
-
-// Initialize Worker
-addEventListener("fetch", (event) => {
-  event.respondWith(handler(event.request));
-});
-```
-
-{{</tab>}}
-{{<tab label="No code">}}
+{{<tab label="dashboard/test">}}
 Test test test.
 
 1. Test.
