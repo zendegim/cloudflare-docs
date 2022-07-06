@@ -44,6 +44,29 @@ Most developers will not need to use `compatibility_flags`; instead, Cloudflare 
 
 Newest changes are listed first.
 
+### `R2` bucket `list` supports `include` option
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <strong>Default as of</strong>
+      </td>
+      <td>2022-07-14</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Flag to enable</strong>
+      </td>
+      <td>
+        <code>r2_list_honor_include</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+With the `r2_list_honor_include` flag set, the `include` argument to R2 `list` options is honored.
+Previously it had accidentally been a no-op.
+
 ### Minimal subrequests
 
 <table>
