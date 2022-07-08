@@ -4431,6 +4431,12 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 [theme="dark"] .DocsMarkdown--aside > p > a {
   color: var(--orange);
 }
+
 pre {
   overflow: auto;
+}
+
+/* not working */
+.sl-elements-api:first-child {
+  background-color: none;
 }
