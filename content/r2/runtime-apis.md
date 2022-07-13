@@ -5,7 +5,7 @@ title: Runtime APIs
 
 # R2
 
-The in-Worker R2 API is accessed by binding an R2 bucket to a [Worker](/workers). The Worker you write can expose external access to  buckets via a route or manipulate R2 objects internally.
+The in-Worker R2 API is accessed by binding an R2 bucket to a [Worker](/workers). The Worker you write can expose external access to buckets via a route or manipulate R2 objects internally.
 
 The R2 API includes some extensions and semantic differences from the S3 API. If you need S3 compatibility, consider using the [S3-compatible API](/r2/platform/s3-compatibility/).
 
@@ -35,11 +35,15 @@ Within your Worker, your bucket binding is now available under the `MY_BUCKET` v
 
 ## Bucket method definitions
 
-The following methods are available on the bucket binding object injected into your code.
+The following methods are available on the bucket binding object.
 
 For example, to issue a `PUT` object request using the binding above:
 
 ```js
+---
+filename: index.js
+highlight: [8]
+---
 export default {
 	async fetch(request, env) {
 		const url = new URL(request.url);
@@ -61,6 +65,8 @@ export default {
 	},
 };
 ```
+
+This Worker reads the incoming request body, and saves it as a file in R2 using the `PUT` method. The request pathname is used as the file name, for example, `/adam/dog` will be saved as `adam/dog`. The initial `/` in the pathname is removed with `url.pathname.slice(1);`.
 
 {{<definitions>}}
 
