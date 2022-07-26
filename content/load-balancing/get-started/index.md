@@ -23,9 +23,8 @@ This guide is meant for organizations setting up their first load balancer. If y
 
 {{<render file="_monitor-definition.md">}}
 
-<details>
-<summary>Create a monitor (dashboard)</summary>
-<div>
+{{<tabs labels="Dashboard | API">}}
+{{<tab label="dashboard">}}
 
 <strong>Set up the monitor</strong>
 
@@ -35,12 +34,8 @@ This guide is meant for organizations setting up their first load balancer. If y
 
 {{<render file="_monitor-prepare-server.md">}}
 
-</div>
-</details>
-
-<details>
-<summary>Create a monitor (API)</summary>
-<div>
+{{</tab>}}
+{{<tab label="api">}}
 
 <strong>Set up the monitor</strong>
 
@@ -50,8 +45,8 @@ This guide is meant for organizations setting up their first load balancer. If y
 
 {{<render file="_monitor-prepare-server.md">}}
 
-</div>
-</details>
+{{</tab>}}
+{{</tabs>}}
 
 {{<render file="_monitor-example.md">}}
 

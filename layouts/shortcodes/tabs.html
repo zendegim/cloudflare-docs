@@ -50,7 +50,9 @@
             </path>
           </svg>ES Modules</a
         >
-
+        {{ else }}
+        <a class="tab-label" href="#" data-link="tab-{{lower $link}}">
+          {{$link}}</a>
         {{ end }}
       </li>
       {{ end }}
