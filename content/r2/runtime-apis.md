@@ -242,8 +242,7 @@ There are 3 variations of arguments that can be used in a range:
 
   - Note that there is a limit on the total amount of data that a single `list` operation can return. If you request data, you may recieve fewer than `limit` results in your response to accomodate metadata.
 
-  - The [compatibility date](/workers/platform/compatibility-dates/) must be set to 2022-07-14 or later (or the `r2_list_honor_include` compatibility flag set), it is treated
-    as `include: ['httpMetadata', 'customMetadata']` regardless of what is provided.
+  - The [compatibility date](/workers/platform/compatibility-dates/) must be set to `2022-07-14` or later in your `wrangler.toml` file. If not, then the `r2_list_honor_include` compatibility flag must be set. It is treated as `include: ['httpMetadata', 'customMetadata']` regardless of what is provided.
 
   This means applications must be careful to avoid code like the following:
 
