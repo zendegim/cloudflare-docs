@@ -65,7 +65,6 @@ Newest changes are listed first.
 </table>
 
 With the `r2_list_honor_include` flag set, the `include` argument to R2 `list` options is honored.
-Previously it had accidentally been a no-op.
 
 ### Minimal subrequests
 
