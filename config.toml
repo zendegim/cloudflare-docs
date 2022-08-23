@@ -43,3 +43,10 @@ tutorial_token = "xxa5a7d4c9-db72-424d-860d-ae68ff7f60ac"
 		lineNoStart = 1
 		lineNos = false
 		hl_Lines = ""
+
+[module]
+	[[module.imports]]
+		path='github.com/cloudflare/terraform-provider-cloudflare'
+	[[module.imports.mounts]]
+		source = "examples/resources"
+		target = "content/terraform-resources"
